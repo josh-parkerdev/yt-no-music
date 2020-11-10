@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowJs": true,
+    "pretty": true,
+    "target": "es6",
+    "outDir": "./build",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@modules/*": ["./modules/*"],
+      "@helpers/*": ["./helpers/*"]
+    },
+  },
+  "lib": ["dom"],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/old stuff",
+    "src/wip"
+  ]
+}

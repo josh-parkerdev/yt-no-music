@@ -1,0 +1,49 @@
+{
+  "name": "chat-genie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "static/index.js",
+  "scripts": {
+    "dev": "npm run compile",
+    "build": "npm run compile && npm run compress && npm run sync",
+    "compile": "tsc && npm run pack",
+    "pack": "NODE_ENV=development webpack --mode development --config webpack.config.js"
+  },
+  "_moduleAliases": {
+    "@components": "build/components",
+    "@modules": "build/modules",
+    "@helpers": "build/helpers"
+  },
+  "_moduleDirectories": [],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@teamsupercell/typings-for-css-modules-loader": "^2.4.0",
+    "@types/chrome": "0.0.124",
+    "@types/yup": "^0.29.8",
+    "@webpack-cli/serve": "^1.0.1",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "css-loader": "^4.3.0",
+    "css-modules-typescript-loader": "^4.0.1",
+    "file-loader": "^6.1.1",
+    "html-webpack-plugin": "^4.5.0",
+    "module-alias": "^2.2.2",
+    "page-parser-tree": "^0.4.0",
+    "reflect-metadata": "^0.1.13",
+    "require-from-string": "^2.0.2",
+    "source-map-loader": "^1.1.1",
+    "style-loader": "^1.3.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-extension-manifest-plugin": "^0.5.0",
+    "yup": "^0.29.3"
+  },
+  "keywords": [],
+  "author": "josh_parkerdev <josh@parkerdev.io>",
+  "license": "MIT"
+}
